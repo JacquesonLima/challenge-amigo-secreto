@@ -4,6 +4,14 @@ let friendList = [];
 
 function adicionarAmigo() {
   let friendName = document.getElementById("amigo").value;
-  friendName.value = "";
-  return friendList.push(friendName);
+  validarEntrada(friendName);
+}
+
+function validarEntrada(friendName) {
+  if (friendName === "") {
+    alert("O campo está vázio, informe um nome para continuar.");
+  } else {
+    friendList.push(friendName);
+    friendName.value = "";
+  }
 }
