@@ -5,15 +5,19 @@ let friendList = [];
 function adicionarAmigo() {
   let friendName = document.getElementById("amigo").value;
   validarEntrada(friendName);
+  limparCampo();
   visualizarLista();
+}
+
+function limparCampo() {
+  document.getElementById("amigo").value = "";
 }
 
 function validarEntrada(friendName) {
   if (friendName === "") {
-    alert("O campo está vázio, informe um nome para continuar.");
+    alert("Por favor, insira um nome.");
   } else {
     friendList.push(friendName);
-    friendName.value = "";
   }
 }
 
@@ -24,7 +28,11 @@ function visualizarLista() {
 
 function sortearAmigo() {
   let variable = parseInt(Math.random() * friendList.length);
-  let sortedFriend = friendList[variable];
-  let result = document.getElementById("resultado");
-  result.innerHTML = sortedFriend;
+  if (friendList.length === 0) {
+    alert("Nenhum amigo foi adicionado.");
+  } else {
+    let sortedFriend = friendList[variable];
+    let result = document.getElementById("resultado");
+    result.innerHTML = sortedFriend;
+  }
 }
