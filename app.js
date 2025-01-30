@@ -5,6 +5,7 @@ let friendList = [];
 function adicionarAmigo() {
   let friendName = document.getElementById("amigo").value;
   validarEntrada(friendName);
+  visualizarLista();
 }
 
 function validarEntrada(friendName) {
@@ -14,4 +15,9 @@ function validarEntrada(friendName) {
     friendList.push(friendName);
     friendName.value = "";
   }
+}
+
+function visualizarLista() {
+  let friendListField = document.getElementById("listaAmigos");
+  friendListField.innerHTML = friendList;
 }
