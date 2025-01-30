@@ -21,3 +21,10 @@ function visualizarLista() {
   let friendListField = document.getElementById("listaAmigos");
   friendListField.innerHTML = friendList;
 }
+
+function sortearAmigo() {
+  let variable = parseInt(Math.random() * friendList.length);
+  let sortedFriend = friendList[variable];
+  let result = document.getElementById("resultado");
+  result.innerHTML = sortedFriend;
+}
