@@ -1,6 +1,9 @@
 # Challenge: Amigo Secreto
 
+![Captura de tela 2025-01-31 120117](https://github.com/user-attachments/assets/f7a0acc0-2049-4d98-b4f8-66bc1c1befbf)
+
 ## Descrição
+
 Este é um projeto simples para organizar sorteios de amigo secreto. A aplicação permite que os usuários adicionem participantes e realizem um sorteio automático para definir quem será o amigo secreto de cada um.
 ![Badge Concluído](http://img.shields.io/static/v1?label=STATUS&message=%20CONCLUÍDO&color=GREEN&style=for-the-badge)
 ![GitHub Org's stars](https://img.shields.io/github/stars/JacquesonLima?style=social)
